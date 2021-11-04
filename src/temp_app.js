@@ -28,7 +28,7 @@ const users = JSON.parse(userData)
 
 //index
 app.get('/', (req, res)=> {
-    res.render('index', {'Account Summary': accounts})
+    res.render('index', {Account Summary: accounts})
 })
 
 //transfer route
@@ -77,6 +77,4 @@ app.get('/profile', (req, res) => {
 })
 
 
-app.listen(3000 , ()=> {
-    console.log("PS Project Running on port 3000!")
-})
+app.listen(3000);
