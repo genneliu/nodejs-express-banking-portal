@@ -7,14 +7,14 @@
   <% } %>
   <span class="error"></span>
 
-  <form id="transferForm">
+  <form id="transferForm" action="/transfer" method="post">
     <span>Transfer From: </span> 
-    <select required name="from" id="from">
+    <select name="from" id="from"  required>
       <option value="checking">Checking</option>
       <option value="savings">Savings</option>
     </select>
     <span> to: </span>
-    <select required name="to" id="to">
+    <select required  name="to" id="to" >
       <option value="checking">Checking</option>
       <option value="savings">Savings</option>
     </select>
@@ -25,5 +25,4 @@
   <br><a href="/">Back to Accounts Summary</a>
   <script src="js/transfer.js"></script>
 
-  
 <%- include('footer'); %>
